@@ -41,7 +41,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
     years > 0
       ? `${years} year${years > 1 ? "s" : ""}${
           monthsRemaining > 0
-            ? ` e ${monthsRemaining} month${monthsRemaining > 1 ? "s" : ""}`
+            ? ` and ${monthsRemaining} month${monthsRemaining > 1 ? "s" : ""}`
             : ""
         }`
       : `${months} month${months > 1 ? "s" : ""}`;

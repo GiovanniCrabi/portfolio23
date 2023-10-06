@@ -26,7 +26,7 @@ const getPageData = async (): Promise<ProjectsPageData> => {
 
   return fetchHygraphQuery(
     query,
-    60 * 60 * 24 // 1 day
+    60,
   );
 };
 
