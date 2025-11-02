@@ -1,10 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   images: {
-    domains: ['media.graphassets.com'],
+    domains: ['eu-west-2.graphassets.com'], // ← Adicione isso
+    // ou use remotePatterns (recomendado):
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'eu-west-2.graphassets.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.graphassets.com', // permite todos subdomínios
+      },
+    ],
   },
 }
 
